@@ -28,6 +28,27 @@ if( !isset($page_subid) ) $page_subid = '';
             padding: 0 !important;
         }
 
+        #fork-me {
+            position: fixed;
+            top: -5px;
+            right: 2%;
+            z-index: 99999;
+            -webkit-transition-duration: 0.3s;
+            -moz-transition-duration: 0.3s;
+            -o-transition-duration: 0.3s;
+            -ms-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+        }
+
+        #fork-me:hover {
+            top: -2px;
+            -webkit-transition-duration: 0.1s;
+            -moz-transition-duration: 0.1s;
+            -o-transition-duration: 0.1s;
+            -ms-transition-duration: 0.1s;
+            transition-duration: 0.1s;
+        }
+
         #sidebar_holder {
             margin-left: 20px !important;
         }
@@ -224,6 +245,11 @@ if( !isset($page_subid) ) $page_subid = '';
     </div>
     <!-- end header -->
 
+    <?php if( SHOW_GIT_RIBBON == true ): ?>
+        <div id="fork-me">
+            <a targe="_blank" href="<?= GIT_URL; ?>"><img src="<?= HOME; ?>/assets/img/ribbons/<?= GIT_RIBBON; ?>.png" alt="Fork <?= NAME; ?> on Github" /></a>
+        </div>
+    <?php endif; ?>
 
     <div class="tb-row-fluid">
         <div class="tb-page-header jumbo">

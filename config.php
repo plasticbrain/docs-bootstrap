@@ -1,23 +1,26 @@
 <?php
 
 //------------------------------------------------------------------------------
-// The Name of this project
+// Project Settings (Name and URL)
 //------------------------------------------------------------------------------
 define('NAME', 'Documentation Bootsrap');
-//------------------------------------------------------------------------------
-// The URL to the "homepage" for this project
-//------------------------------------------------------------------------------
 define('PROJECT_LINK', '');
 
 //------------------------------------------------------------------------------
-// The name of your company, site, etc. (used in copyright text in the footer)
+// Company Name and URL
 //------------------------------------------------------------------------------
 define('COMPANY', ' PlasticBrain Media LLC');
+define('COMPANY_LINK', 'http://plasticbrain.net');
 
 //------------------------------------------------------------------------------
-// Your company's website
+// Show the "Fork me on Github" ribbon?
 //------------------------------------------------------------------------------
-define('COMPANY_LINK', 'http://plasticbrain.net');
+define('GIT_URL', '#'); // URL to the Github repository for this project
+define('SHOW_GIT_RIBBON', true); // Show the "Fork me on Github" ribbon?
+
+// Which ribbon do you want to use? Options are:
+// blue-white, green-white, pink-black, red-white, white-black, green-black, orange-black, violet-white
+define('GIT_RIBBON', 'red-white'); 
 
 //------------------------------------------------------------------------------
 // Set the "Home" location (Manually set this if the script screws it up)
