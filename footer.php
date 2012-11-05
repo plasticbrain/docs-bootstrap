@@ -1,7 +1,7 @@
       <hr>
 
       <footer>
-        <p>&copy; <?= date('Y'); ?> <?= COMPANY; ?></p>
+        <p>&copy; <?= date('Y'); ?> <a target="_blank" href="<?= COMPANY_LINK; ?>"><?= COMPANY; ?></a></p>
       </footer>
 
     </div><!--/.fluid-container-->
